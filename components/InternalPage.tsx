@@ -6,14 +6,16 @@ export function PageHero({
   title,
   intro,
   children,
+  compact = false,
 }: {
   eyebrow: string;
   title: string;
   intro: string;
   children?: React.ReactNode;
+  compact?: boolean;
 }) {
   return (
-    <section className="page-hero section-shell">
+    <section className={`page-hero section-shell${compact ? " page-hero-compact" : ""}`}>
       <nav className="breadcrumb" aria-label="Navegação estrutural">
         <Link href="/">Início</Link>
         <span aria-hidden="true">/</span>

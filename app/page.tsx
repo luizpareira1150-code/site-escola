@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowLink, CourseCard, SectionHeading } from "../components/ui";
 import { EditorialImage } from "../components/InternalPage";
+import { TestimonialVideo } from "../components/TestimonialVideo";
 
 const pillars = [
   {
@@ -33,8 +34,10 @@ const highlights = [
 const otherCourses = [
   { title: "Curso de Interpretação dos Sonhos", meta: "Teoria e técnica de análises · 30 horas", index: "01" },
   { title: "Curso de Primeiros Socorros Psicológicos", meta: "Teoria e estratégias · 30 horas", index: "02" },
-  { title: "Curso de Florais de Back", meta: "Teoria e fórmulas · 30 horas", index: "03" },
+  { title: "Curso de Florais de Bach", meta: "Teoria e fórmulas · 30 horas", index: "03" },
 ];
+
+const testimonials = ["-K5BwA9aBZE", "YHwclWFKPA0", "A-ivSppDO-c", "Gb4vxoUNvZc"];
 
 export default function Home() {
   return (
@@ -162,6 +165,18 @@ export default function Home() {
               <li key={highlight}><span>{String(index + 1).padStart(2, "0")}</span>{highlight}</li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="testimonials-section section-shell section-space" aria-labelledby="testimonials-title">
+        <div className="testimonials-heading">
+          <SectionHeading eyebrow="Depoimentos" title="A formação na voz de quem a vive." id="testimonials-title" />
+          <p>Conheça alguns relatos dos nossos alunos sobre a experiência na formação.</p>
+        </div>
+        <div className="testimonials-grid">
+          {testimonials.map((id, index) => (
+            <TestimonialVideo key={id} id={id} number={String(index + 1).padStart(2, "0")} />
+          ))}
         </div>
       </section>
 

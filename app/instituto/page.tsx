@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ContextCTA, EditorialSection, PageHero, TagList } from "../../components/InternalPage";
 import { createPageMetadata } from "../../components/page-metadata";
 
@@ -72,7 +73,18 @@ export default function Page() {
 
       <EditorialSection eyebrow="Fundadora e Diretora" title="Maria Aparecida de Freitas da Silva" id="fundadora">
         <div className="founder-layout">
-          <div className="founder-monogram" aria-hidden="true"><span>MA</span><small>Fundadora<br />e Diretora</small></div>
+          <figure className="founder-portrait">
+            <div className="founder-portrait-frame">
+              <Image
+                src="/editorial/fundadora-maria-aparecida.png"
+                alt="Maria Aparecida de Freitas da Silva, fundadora e diretora do Instituto"
+                width={714}
+                height={961}
+                sizes="(max-width: 719px) calc(100vw - 68px), (max-width: 1199px) 310px, 270px"
+                loading="lazy"
+              />
+            </div>
+          </figure>
           <div className="prose-flow">
             <p className="lead-text">
               Maria Aparecida de Freitas da Silva é a fundadora e diretora do Instituto de Formação Psicanalítica Cida Freitas.
