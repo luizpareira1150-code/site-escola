@@ -123,16 +123,12 @@ export function EditorialImage({
   src,
   alt,
   caption,
-  credit,
-  creditHref,
   portrait = false,
   className = "",
 }: {
   src: string;
   alt: string;
   caption: string;
-  credit: string;
-  creditHref: string;
   portrait?: boolean;
   className?: string;
 }) {
@@ -143,7 +139,6 @@ export function EditorialImage({
       </div>
       <figcaption>
         <span>{caption}</span>
-        <a href={creditHref} target="_blank" rel="noopener noreferrer">Foto: {credit} / Unsplash</a>
       </figcaption>
     </figure>
   );

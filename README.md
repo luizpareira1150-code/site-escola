@@ -31,3 +31,22 @@ Conecte o repositório GitHub à Vercel e mantenha as configurações padrão do
 - Root Directory: a pasta que contém este `package.json`
 
 O projeto não depende de variáveis de ambiente para renderizar as páginas institucionais.
+
+### Erros do upload anterior
+
+O erro de exportação de `consultationWhatsApp` e os erros TS2739 de `EditorialImage`
+indicam arquivos de versões diferentes no repositório. Atualize as pastas `app/` e
+`components/` juntas, usando os arquivos desta cópia local validada. Em particular,
+`components/site-data.ts` exporta `consultationWhatsApp` e
+`components/InternalPage.tsx` contém a tipagem compatível com as páginas atuais.
+
+Não é necessário apagar código para corrigir esses erros. As pastas `dist/` e
+`tmp/`, assim como `tsconfig.tsbuildinfo`, são dispensáveis no GitHub e podem ser
+removidas. O `.gitignore` só evita novos arquivos: não remove os já enviados.
+Mantenha `app/`, `components/`, `public/`, `package.json`, `package-lock.json` e
+os arquivos de configuração. Os arquivos Markdown não causam a falha de build.
+
+Para upload manual, extraia `entrega/site-escola-vercel.zip` e envie seu conteúdo
+para a raiz do repositório, substituindo os arquivos existentes. Não envie o ZIP
+nem crie uma pasta extra envolvendo o projeto. Depois confirme o commit no GitHub
+e acompanhe o novo deployment na Vercel.

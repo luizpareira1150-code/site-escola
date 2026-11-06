@@ -15,3 +15,7 @@ export const contact = {
 };
 
 export const enrollmentForm = "https://forms.gle/4vnfPgG2ZpqZZbndA";
+
+export const consultationWhatsApp = `https://wa.me/5521988479250?text=${encodeURIComponent(
+  "Olá! Encontrei o site do Instituto de Formação Psicanalítica Cida Freitas e gostaria de informações sobre o atendimento psicanalítico online.",
+)}`;

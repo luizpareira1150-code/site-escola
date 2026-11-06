@@ -18,6 +18,8 @@ export function Footer() {
           <h2>Navegação</h2>
           {navigation.slice(1).map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
           <Link href="/inscricao">Inscrição e investimento</Link>
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- Native fragment navigation avoids duplicate hashes in Next 16.3. */}
+          <a href="/#atendimento-online">Atendimento online</a>
         </div>
         <div className="footer-column">
           <h2>Contato</h2>
