@@ -110,8 +110,8 @@ export default function Home() {
       <section className="consultation-section section-space" id="atendimento-online" aria-labelledby="consultation-title">
         <div className="section-shell consultation-layout">
           <div className="consultation-copy">
-            <SectionHeading eyebrow="Um espaço de escuta" title="Atendimento psicanalítico online" id="consultation-title" />
-            <p>Entre em contato com o Instituto para saber mais sobre o atendimento psicanalítico online.</p>
+            <SectionHeading eyebrow="Um espaço de escuta" title="Atendimento psicanalítico social on-line" id="consultation-title" />
+            <p>O Instituto tem compromisso social de atender pessoas com transtornos emocionais e mentais, porque entendemos que esse cuidado, ainda que, de maneira preventiva, pode conscientizar e impactar a sociedade, a fim de priorizar também o cuidado com a saúde da mente.</p>
             <div className="button-row">
               <a className="button button-primary" href={consultationWhatsApp} target="_blank" rel="noopener noreferrer">
                 Solicitar atendimento <span aria-hidden="true">↗</span>
