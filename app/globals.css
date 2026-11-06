@@ -104,6 +104,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .intro-editorial { display: grid; gap: 32px; }
 .intro-copy { max-width: 660px; margin: 0; }
 .intro-copy p { color: #445048; font-size: 17px; }
+.consultation-section { background: var(--sand-50); border-block: 1px solid var(--line); }
+.consultation-layout { display: grid; align-items: center; gap: 48px; }
+.consultation-copy { min-width: 0; }
+.consultation-copy > p { max-width: 42ch; margin: 24px 0 30px; color: var(--muted); font-size: 17px; }
+.consultation-section a { scroll-margin-top: var(--anchor-offset); }
+.consultation-copy .button { gap: 16px; }
+.consultation-photo.editorial-image { min-width: 0; margin: 0; }
+.consultation-photo.editorial-image img { height: auto; }
 .pillars-section { position: relative; overflow: hidden; background: var(--navy-950); color: var(--paper); }
 .pillars-section::after { position: absolute; right: -1vw; bottom: -8vw; color: rgba(255,255,255,.028); content: "escuta"; font-family: var(--font-serif); font-size: clamp(150px, 22vw, 380px); letter-spacing: -.08em; line-height: .7; pointer-events: none; }
 .pillars-section .section-heading h2, .pillars-section .eyebrow, .pillars-section .arrow-link { color: var(--paper); }
@@ -207,7 +215,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .editorial-image:hover img { transform: scale(1.015); filter: saturate(.86) contrast(1); }
 .editorial-image figcaption { display: flex; flex-direction: column; gap: 6px; padding: 14px 0 14px 18px; border-left: 2px solid var(--gold); color: var(--muted); font-size: 11px; }
 .editorial-image figcaption span { max-width: 38ch; color: var(--navy-950); font-family: var(--font-serif); font-size: 16px; }
-.editorial-image figcaption a { color: var(--muted); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
 .editorial-image-portrait img { object-position: center 48%; }
 .intro-photo { margin: 36px 0 0; }
 .intro-photo img { height: 400px; object-position: 63% center; }
@@ -399,7 +406,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .contact-page { grid-template-columns: .75fr 1.25fr; gap: 8vw; }
   .contact-directory { grid-template-columns: 1fr 1fr; border-left: 1px solid var(--line); }
   .contact-directory > * { padding: 24px; border-right: 1px solid var(--line); }
-  .editorial-image figcaption { flex-direction: row; align-items: baseline; justify-content: space-between; gap: 32px; }
   .tripod-visual-grid { grid-template-columns: minmax(260px, .68fr) minmax(0, 1.32fr); gap: clamp(48px, 8vw, 104px); align-items: start; }
   .tripod-photo { position: sticky; top: 132px; }
   .tripod-photo img { height: 640px; }
@@ -411,6 +417,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 @media (min-width: 980px) {
   :root { --anchor-offset: 98px; }
+  .consultation-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(48px, 6vw, 96px); }
+  .consultation-copy { grid-column: 2; grid-row: 1; }
+  .consultation-photo { grid-column: 1; grid-row: 1; }
   .testimonials-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
   .hero { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px; }
   .hero-copy { grid-column: 1 / 9; grid-row: 1; align-self: center; padding-bottom: 26px; }

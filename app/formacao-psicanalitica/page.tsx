@@ -97,8 +97,6 @@ export default function Page() {
             src="/editorial/estudo-online.webp"
             alt="Mesa de estudos com computador, livros e caderno de anotações"
             caption="Aulas gravadas e materiais digitais permitem organizar o estudo de diferentes lugares."
-            credit="Yen Vu"
-            creditHref="https://unsplash.com/photos/TdgfSyDoWBE"
             className="dynamics-photo"
           />
         </div>

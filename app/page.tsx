@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowLink, CourseCard, SectionHeading } from "../components/ui";
 import { EditorialImage } from "../components/InternalPage";
 import { TestimonialVideo } from "../components/TestimonialVideo";
+import { consultationWhatsApp } from "../components/site-data";
 
 const pillars = [
   {
@@ -87,8 +88,6 @@ export default function Home() {
               src="/editorial/estudo-anotacoes.webp"
               alt="Pessoa estudando em uma mesa com livros abertos e anotações"
               caption="Ler, anotar e retornar aos conceitos."
-              credit="Jacob Bentzinger"
-              creditHref="https://unsplash.com/photos/QiLPQeQSXD0"
               className="intro-photo"
               portrait
             />
@@ -105,6 +104,33 @@ export default function Home() {
               <ArrowLink href="/instituto">Conheça nossa história</ArrowLink>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="consultation-section section-space" id="atendimento-online" aria-labelledby="consultation-title">
+        <div className="section-shell consultation-layout">
+          <div className="consultation-copy">
+            <SectionHeading eyebrow="Um espaço de escuta" title="Atendimento psicanalítico online" id="consultation-title" />
+            <p>Entre em contato com o Instituto para saber mais sobre o atendimento psicanalítico online.</p>
+            <div className="button-row">
+              <a className="button button-primary" href={consultationWhatsApp} target="_blank" rel="noopener noreferrer">
+                Solicitar atendimento <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+          <figure className="editorial-image consultation-photo">
+            <div className="editorial-image-frame">
+              <Image
+                src="/editorial/atendimento-online.webp"
+                alt="Sofá verde em um ambiente de tons claros"
+                width={1400}
+                height={933}
+                sizes="(max-width: 719px) calc(100vw - 28px), (max-width: 979px) calc(100vw - 72px), (max-width: 1499px) 580px, 660px"
+                loading="lazy"
+                unoptimized
+              />
+            </div>
+          </figure>
         </div>
       </section>
 

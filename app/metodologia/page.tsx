@@ -31,8 +31,6 @@ export default function Page() {
             src="/editorial/leitura-reflexao.webp"
             alt="Livro aberto junto a uma janela em um ambiente de leitura silencioso"
             caption="Leitura e elaboração fazem parte do percurso."
-            credit="Jessica Fadel"
-            creditHref="https://unsplash.com/photos/ANexOmTOzmY"
             className="tripod-photo"
             portrait
           />
