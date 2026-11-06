@@ -11,7 +11,7 @@ export const metadata = createPageMetadata(
 export default function Page() {
   return (
     <>
-      <PageHero eyebrow="Inscrição e Investimento" title="Inscrição na Formação Psicanalítica" intro="Curso de Psicanálise Clínica online, com 18 meses de duração, 500 horas mais atividades complementares, material didático e análise pessoal incluídos." />
+      <PageHero eyebrow="Inscrição e Investimento" title="Inscrição na Formação Psicanalítica" intro="Curso de Psicanálise Clínica online, com 18 meses de duração, 700 horas mais atividades complementares, material didático e análise pessoal incluídos." />
 
       <EditorialSection eyebrow="Investimento" title="Condições informadas pelo Instituto" id="investimento">
         <div className="pricing-layout">

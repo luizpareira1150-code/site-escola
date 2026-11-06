@@ -60,7 +60,7 @@ export default function Home() {
               Conhecer o Instituto <span aria-hidden="true">↗</span>
             </Link>
           </div>
-          <p className="hero-facts">Formação online <span /> 18 meses <span /> 500h + atividades complementares</p>
+          <p className="hero-facts">Formação online <span /> 18 meses <span /> 700h + atividades complementares</p>
         </div>
 
         <div className="hero-art" aria-label="Acolher para escutar. Formar para transformar.">
@@ -168,7 +168,7 @@ export default function Home() {
           </p>
           <dl className="fact-grid">
             <div><dt>Duração</dt><dd>18 meses</dd></div>
-            <div><dt>Carga horária</dt><dd>500h + complementares</dd></div>
+            <div><dt>Carga horária</dt><dd>700h + complementares</dd></div>
             <div><dt>Modalidade</dt><dd>Online</dd></div>
             <div><dt>Frequência</dt><dd>5 aulas mensais</dd></div>
           </dl>

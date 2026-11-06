@@ -4,7 +4,7 @@ import { createPageMetadata } from "../../components/page-metadata";
 
 export const metadata = createPageMetadata(
   "Curso de Formação Psicanalítica Online | Instituto Cida Freitas",
-  "Conheça a formação online em Psicanálise Clínica: 18 meses, 500 horas, análise pessoal, supervisão, estágio e Trabalho de Conclusão de Curso.",
+  "Conheça a formação online em Psicanálise Clínica: 18 meses, 700 horas, análise pessoal, supervisão, estágio e Trabalho de Conclusão de Curso.",
   "/formacao-psicanalitica",
 );
 
@@ -45,7 +45,7 @@ const resources = ["Quiz", "Cinemateca", "Grupo de WhatsApp", "E-books", "Docume
 const faq = [
   { title: "O curso é online?", answer: "Sim. A formação em Psicanálise Clínica é oferecida somente online." },
   { title: "Quanto tempo dura?", answer: "A duração informada é de 18 meses." },
-  { title: "Qual é a carga horária?", answer: "São 500 horas, acrescidas de horas complementares de análise pessoal e supervisão." },
+  { title: "Qual é a carga horária?", answer: "São 700 horas, acrescidas de horas complementares de análise pessoal e supervisão." },
   { title: "As aulas ficam gravadas?", answer: "Sim. O curso possui videoaulas gravadas e o acesso às videoaulas é vitalício." },
   { title: "Existem aulas ao vivo?", answer: "Sim. O material informa uma aula ou encontro ao vivo por mês no Curso de Psicanálise Clínica." },
   { title: "A análise pessoal é obrigatória?", answer: "Sim. A análise pessoal é um requisito obrigatório da formação." },
@@ -69,7 +69,7 @@ export default function Page() {
 
       <section className="quick-facts section-shell" aria-label="Informações principais do curso">
         <div><span>01</span><strong>18 meses</strong><small>Duração</small></div>
-        <div><span>02</span><strong>500h + complementares</strong><small>Carga horária</small></div>
+        <div><span>02</span><strong>700h + complementares</strong><small>Carga horária</small></div>
         <div><span>03</span><strong>Online</strong><small>Modalidade</small></div>
         <div><span>04</span><strong>Material incluído</strong><small>Conteúdo didático</small></div>
         <div><span>05</span><strong>Certificado</strong><small>Mediante requisitos</small></div>
